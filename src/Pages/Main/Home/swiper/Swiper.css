@@ -1,0 +1,55 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    direction: ltr;
+  }
+
+  .swiper-slide {
+    height: 380px;
+    gap: 4px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    outline: 2px solid rgba(0, 0, 0, 0.37);
+    /*Centerslidetextvertically*/display: flex;
+    justify-content :space-between ;
+    flex-direction: column;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    padding: 10px;
+    cursor: grabbing;
+   
+}
+.swiper-slide a{
+  font-weight: 800;
+  font-size: medium;
+  letter-spacing: 1px;
+}
+.swiper-slide button{
+  margin: 0 auto;
+}
+.comming-soon.active{
+  position: relative;
+}
+.comming-soon.active::before{
+  content: "هناك بث مباشر الان";
+  padding-block: 4px;
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: red;
+  z-index: -1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+  

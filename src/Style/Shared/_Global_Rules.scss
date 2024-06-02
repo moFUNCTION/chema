@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 98, 211);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    &:not(input){
+        text-transform: capitalize;
+    }
+    font-family: "Open Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-variation-settings:
+      "wdth" 100;
+    
+}
+body , html {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    user-select: none;
+}
+.carousel{
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: white;
+    }
+}.custom-shape-divider-top-1711771384 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1711771384 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-top-1711771384 .shape-fill {
+    fill: #0b77cf;
+}

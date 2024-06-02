@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="/Untitled_design-removebg-preview.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>
+    Mrs Eman Chema
+  </title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    document.addEventListener('contextmenu', function (event) {
+      // Check if the target of the event is a video element or is contained within a video element
+      let targetElement = event.target;
+      while (targetElement) {
+        if (targetElement.tagName === 'VIDEO') {
+          // Prevent the default context menu behavior if the target is a video element
+          event.preventDefault();
+          return;
+        }
+        targetElement = targetElement.parentElement;
+      }
+    });
+  </script>
+</body>
+
+</html>

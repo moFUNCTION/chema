@@ -1,0 +1,6 @@
+@use "./mixin/Ocean_wave_Animation" as *;
+.section1{
+  .ocean-wave-animation { 
+    @include Ocean_Wave_Animation(bottom , 0.08 , 7s);    
+  }
+}
